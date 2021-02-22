@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="Develop/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Develop/reset.css" />
+  <link rel="stylesheet" href="Develop/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container d-flex min-vh-100">
+    <!-- Timeblocks go here -->
+    <table class="col-12">
+      <tr class="row justify-content-center time1" id="#row">
+        <th class="col-1 hour text-right">9:00am</th>
+        <td class="col-10 d-flex align-content-start desc1">
+          <textarea class="w-100 h-100 description text1" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time2">
+        <th class="col-1 hour text-right">10:00am</th>
+        <td class="col-10 d-flex align-content-start desc2">
+          <textarea class="w-100 h-100 description text2" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time3">
+        <th class="col-1 hour text-right">11:00am</th>
+        <td class="col-10 d-flex align-content-start desc3">
+          <textarea class="w-100 h-100 description text3" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time4">
+        <th class="col-1 hour text-right">12:00pm</th>
+        <td class="col-10 d-flex align-content-start desc4">
+          <textarea class="w-100 h-100 description text4" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time5">
+        <th class="col-1 hour text-right">1:00pm</th>
+        <td class="col-10 d-flex align-content-start desc5">
+          <textarea class="w-100 h-100 description text5" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time6">
+        <th class="col-1 hour text-right">2:00pm</th>
+        <td class="col-10 d-flex align-content-start desc6">
+          <textarea class="w-100 h-100 description text6" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time7">
+        <th class="col-1 hour text-right">3:00pm</th>
+        <td class="col-10 d-flex align-content-start desc7">
+          <textarea class="w-100 h-100 description text7" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time8">
+        <th class="col-1 hour text-right">4:00pm</th>
+        <td class="col-10 d-flex align-content-start desc8">
+          <textarea class="w-100 h-100 description text8" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+      <tr class="row justify-content-center time9">
+        <th class="col-1 hour text-right">5:00pm</th>
+        <td class="col-10 d-flex align-content-start desc9">
+          <textarea class="w-100 h-100 description text9" cols="100" rows="3"></textarea>
+        </td>
+        <td class="col-1 saveBtn d-flex justify-content-center"><i class="fas fa-save h-25"></i></td>
+      </tr>
+
+
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./Develop/script.js"></script>
+</body>
+
 </html>
