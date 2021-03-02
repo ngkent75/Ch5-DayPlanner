@@ -34,13 +34,13 @@ To access the website, go to https://ngkent75.github.io/Ch5-DayPlanner/
 This project uses a table to assist the user in planning their schedule. The date will be displayed at the top.
 <br>
 
-![Home](Assets/Home.PNG)
+![Home](Assets/images/Home.PNG)
 
 <br>
 You can enter text into any of the blocks. The blocks will be colored based on the time of day. Grey means that it's in the past, red means it is in the present, and green means it is in the future.
 <br>
 
-![Time Block](Assets/Timeblock.PNG)
+![Time Block](Assets/images/Timeblock.PNG)
 
 
 <br>
@@ -49,7 +49,7 @@ You can enter text into any of the blocks. The blocks will be colored based on t
 Click the blue button to save the data. The data will be saved to local storage, and will be pulled when you revisit the page. Try refreshing, the text will stay there. If you want to change the data that's stored, change the text in the textareas and save again. The local storage will update.
 <br>
 
-![Local Storage](Assets/tStorage.PNG)
+![Local Storage](Assets/images/tStorage.PNG)
 <br>
 
 
